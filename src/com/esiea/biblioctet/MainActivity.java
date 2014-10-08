@@ -1,9 +1,10 @@
 package com.esiea.biblioctet;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -30,6 +31,11 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
+        } else if (id == R.id.action_settings2) {
+        	
+        	Toast.makeText(getApplicationContext(), "This app is awesome!", Toast.LENGTH_SHORT).show();
+        	
+        	return true;
         }
         return super.onOptionsItemSelected(item);
     }
